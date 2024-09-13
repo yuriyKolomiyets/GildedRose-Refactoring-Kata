@@ -4,8 +4,10 @@ public class Item {
 
     public String name;
 
+    // the number of days we have to sell the items
     public int sellIn;
 
+    // how valuable the item is
     public int quality;
 
     public Item(String name, int sellIn, int quality) {
