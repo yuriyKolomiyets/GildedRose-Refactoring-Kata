@@ -13,9 +13,9 @@ import com.gildedrose.updaters.NormalItemUpdater;
 
 /**
  * Factory class to provide the appropriate updater for each type of item. Using
- * static field and methods here we ensure that there is a single, shared *
+ * static field and methods here we ensure that there is a single, shared
  * instance. We also avoid creating a new instance of the factory every time we
- * * need an updater and ensures that all calls to getItemUpdater use the same *
+ * need an updater and ensures that all calls to getItemUpdater use the same
  * ItemUpdater instances.
  */
 public class ItemUpdaterFactory {

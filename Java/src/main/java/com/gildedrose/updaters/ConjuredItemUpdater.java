@@ -15,7 +15,7 @@ public class ConjuredItemUpdater implements ItemUpdater {
         ItemUtils.decrementSellIn(item);
 
         if (item.sellIn > 0) {
-            ItemUtils.decreaseQuality(item, 2); // Degrade twice as fast after sellIn date
+            ItemUtils.decreaseQuality(item, 2);
         } else {
             ItemUtils.decreaseQuality(item, 4); // Degrade twice as fast after sellIn date
         }
