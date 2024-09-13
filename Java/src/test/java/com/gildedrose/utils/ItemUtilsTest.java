@@ -43,10 +43,8 @@ class ItemUtilsTest {
         ItemUtils.decreaseQuality(item, 20);
         assertEquals(0, item.quality, "Quality should be capped at 0");
 
-        // Test logging when quality becomes zero
         item.quality = 10;
         ItemUtils.decreaseQuality(item, 15);
         assertEquals(0, item.quality, "Quality should be capped at 0");
-        // You should also verify the logging output if necessary
     }
 }
