@@ -12,7 +12,11 @@ import com.gildedrose.updaters.LegendaryItemUpdater;
 import com.gildedrose.updaters.NormalItemUpdater;
 
 /**
- * Factory class to provide the appropriate updater for each type of item.
+ * Factory class to provide the appropriate updater for each type of item. Using
+ * static field and methods here we ensure that there is a single, shared *
+ * instance. We also avoid creating a new instance of the factory every time we
+ * * need an updater and ensures that all calls to getItemUpdater use the same *
+ * ItemUpdater instances.
  */
 public class ItemUpdaterFactory {
 
@@ -32,7 +36,8 @@ public class ItemUpdaterFactory {
     /**
      * Returns the appropriate updater for the given item based on its name.
      *
-     * @param item The item for which to get the updater.
+     * @param item
+     *            The item for which to get the updater.
      * @return The updater for the given item.
      */
     public static ItemUpdater getItemUpdater(Item item) {
